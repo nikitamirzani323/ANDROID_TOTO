@@ -8,47 +8,59 @@
     tools:context=".Home">
 
 
-
-
     <LinearLayout
         android:id="@+id/layout_top"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="208dp"
+        android:background="@color/button_background_panel"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
-        <Button
-            android:id="@+id/btnBack"
+
+
+        <TextView
+            android:id="@+id/txtUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="Back"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/button_background_action"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="1dp" />
-        <Button
-            android:id="@+id/btnBack2"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Username : Anton"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txtIpaddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:text="Info"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/button_background_info"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="1dp" />
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="IPADDRESS : 123.344.778"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txtBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="BALANCE : Rp 1.000.000"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_middle"
-        android:layout_width="411dp"
-        android:layout_height="590dp"
+        android:layout_width="match_parent"
+        android:layout_height="515dp"
+        android:layout_marginTop="30dp"
         android:orientation="horizontal"
-        android:paddingTop="20dp"
         app:layout_constraintBottom_toTopOf="@+id/layout_bottom"
         app:layout_constraintTop_toBottomOf="@+id/layout_top"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp">
 
         <Button
             android:id="@+id/btnHongkong"
@@ -93,35 +105,24 @@
         tools:layout_editor_absoluteX="2dp">
 
         <Button
-            android:id="@+id/btnHongkong12"
+            android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="HONGKONG"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/black"
+            android:text="Back"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/button_background_action"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="1dp" />
 
         <Button
-            android:id="@+id/btnHongkong12"
+            android:id="@+id/btnBack2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="sINGAPORE"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/black"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="1dp" />
-
-        <Button
-            android:id="@+id/btnHongkong13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="SYDNEY"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/black"
+            android:layout_marginStart="5dp"
+            android:text="Info"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/button_background_info"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="1dp" />
     </LinearLayout>
