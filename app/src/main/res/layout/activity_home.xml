@@ -4,6 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_theme"
     tools:context=".Home">
 
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Back"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/button_background_action"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+        <Button
+            android:id="@+id/btnBack2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Info"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/button_background_info"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_middle"
+        android:layout_width="411dp"
+        android:layout_height="590dp"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/layout_top"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+            android:id="@+id/btnHongkong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="HONGKONG"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <Button
+            android:id="@+id/btnHongkong2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="sINGAPORE"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <Button
+            android:id="@+id/btnHongkong3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="SYDNEY"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="2dp">
+
+        <Button
+            android:id="@+id/btnHongkong12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="HONGKONG"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <Button
+            android:id="@+id/btnHongkong12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="sINGAPORE"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <Button
+            android:id="@+id/btnHongkong13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="SYDNEY"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

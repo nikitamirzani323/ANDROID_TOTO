@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_theme"
     tools:context=".MainActivity">
 
     <ImageView
@@ -28,21 +29,20 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnNext"
-        app:layout_constraintVertical_bias="0.857" />
+        app:layout_constraintVertical_bias="0.899" />
 
     <Button
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="36dp"
         android:text="Next"
         android:textColor="@color/black"
-        app:backgroundTint="@color/button_background"
+        app:backgroundTint="@color/button_background_action"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
