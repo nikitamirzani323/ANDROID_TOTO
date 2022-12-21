@@ -1,6 +1,7 @@
 package com.toto.sdsb.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.toto.sdsb.R;
+import com.toto.sdsb.TipeGame;
 import com.toto.sdsb.model.PasaranList;
 
 import java.util.List;
@@ -39,6 +41,14 @@ public class PasaranListAdapter extends RecyclerView.Adapter<PasaranListAdapter.
         holder.item_periode.setText(pasaranLists.get(position).getPeriodePasaran());
         holder.item_date.setText(pasaranLists.get(position).getDatePasaran());
         holder.item_status.setText(pasaranLists.get(position).getStatusPasaran());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context, TipeGame.class);
+                context.startActivity(i);
+            }
+        });
     }
 
     @Override
