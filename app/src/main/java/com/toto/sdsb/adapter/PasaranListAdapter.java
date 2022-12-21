@@ -46,6 +46,11 @@ public class PasaranListAdapter extends RecyclerView.Adapter<PasaranListAdapter.
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(context, TipeGame.class);
+                i.putExtra("pasaran_id",pasaranLists.get(position).getIdpasaran().toString());
+                i.putExtra("pasaran_nm",pasaranLists.get(position).getNmPasaran());
+                i.putExtra("pasaran_periode", pasaranLists.get(position).getPeriodePasaran());
+                i.putExtra("pasaran_date",pasaranLists.get(position).getDatePasaran());
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 context.startActivity(i);
             }
         });
