@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_theme">#f3f9ff</color>
     <color name="button_background_panel">#0081a0</color>
+    <color name="button_background_card">#d7effe</color>
     <color name="button_background_action">#51fa7c</color>
     <color name="button_background_info">#bf95f9</color>
 </resources>
